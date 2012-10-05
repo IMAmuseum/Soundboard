@@ -1,0 +1,149 @@
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width:357px;
+	overflow-x:hidden;
+	color: #444;
+	padding: 10px;
+}
+
+#controls {
+	margin: 0 0 20px 0;
+	padding: 10px 20px;
+	-webkit-box-shadow: inset 0 0 10px #CCC;
+    box-shadow:         inset 0 0 10px #CCC;
+}
+
+#filter {
+	height: 22px;
+	vertical-align: top;
+	border: 1px solid #CCC;
+}
+
+#sounds {
+	overflow: auto;
+	height: 360px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	-webkit-box-shadow: inset 0 0 10px #CCC;
+    box-shadow:         inset 0 0 10px #CCC;
+}
+
+#sounds li.hidden {
+	display: none;
+}
+
+#sounds li {
+	border-bottom: 1px solid #EEE;
+}
+
+a {
+	color: #444;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+}
+
+#sounds li a.play {
+	padding: 10px 10px 10px 60px;
+	background: url("play.png") 10px 7px no-repeat;
+	margin: 0 30px 0 0;
+	position: relative;
+	z-index: 1;
+}
+
+a.sort {
+	width: 24px;
+	height: 16px;
+	display: inline-block;
+	border: 1px solid #CCC;
+	overflow: hidden;
+	font-size: 10px;
+	white-space: nowrap;
+	text-indent: -3000px;
+}
+
+a.preview {
+	float: right;
+	margin: -34px 4px 0 0;
+	border: 0;
+	width: 26px;
+	height: 26px;
+	text-indent: -3000px;
+	display: inline-block;
+	background: url("preview.png") 7px 3px no-repeat;
+	z-index: 999;
+}
+
+#sort-az {
+	background: url("sort_asc.png") no-repeat;
+}
+
+#sort-az.active {
+	background: url("sort_asc.png") #EEE no-repeat;
+}
+
+#sort-za {
+	background: url("sort_desc.png") no-repeat;
+}
+
+#sort-za.active {
+	background: url("sort_desc.png") #EEE no-repeat;
+}
+
+.command {
+	color: #CCC;
+	font-size: 80%;
+}
+
+#preview {
+	display: none;
+}
+
+body.options {
+	width: auto;
+}
+
+#options {
+	margin: 20px;
+	padding: 10px;
+	background: #EEE;
+	border: 1px solid #CCC;
+	color: #444;
+}
+
+#options H1 {
+	margin: 0 0 20px 0;
+}
+
+#options label {
+	display: block;
+	font-weight: bold;
+	margin: 0 0 6px 0;
+}
+
+#options #soundboard_endpoint {
+	width: 360px;
+	padding: 3px;
+	display: block;
+}
+
+#options #save {
+	padding: 6px 12px;
+	margin: 20px 0 0 0;
+}
+
+#options #status {
+	color: #58792E;
+	background-color: #A2D959;
+	border: 3px solid #8FD401;
+	font-weight: bold;
+	padding: 10px;
+	display: none;
+	margin: 0 0 20px 0;

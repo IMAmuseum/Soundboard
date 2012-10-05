@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<title>IMA Soundboard Controller</title>
+		<script src="jquery-1.7.2.js"></script>
+		<script src="jquery.tinysort.js"></script>
+		<script src="soundboard.js"></script>
+		<link rel="stylesheet" type="text/css" href="soundboard.css" />
+	</head>
+	<body>
+		<div id="controls">
+			<input id="filter" name="filter" size="40" type="text" placeholder="Search"/>
+			<a id="sort-az" class="sort active" data-sort="alpha-a" href="az">A-Z</a>
+			<a id="sort-za" class="sort" data-sort="alpha-z" href="za">Z-A</a>
+		</div>
+		<ul id="sounds"></ul>
+		<audio id="preview" src="" preload="auto"></audio>
+	</body>
+</html>
